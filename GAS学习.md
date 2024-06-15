@@ -35,3 +35,7 @@ DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet, Health, COND_None, REPNOTIFY_A
 COND_None 无条件复制
 
 REPNOTIFY_Always 总是通知，REPNOTIFY_OnChanged 改变值时通知
+
+![image-20240615152401012](G:\ue5game\Aura\Figure\image-20240615152401012.png)
+
+创建widgetController负责widget和model之间的数据交互
