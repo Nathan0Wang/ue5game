@@ -38,4 +38,24 @@ REPNOTIFY_Always 总是通知，REPNOTIFY_OnChanged 改变值时通知
 
 ![image-20240615152401012](G:\ue5game\Aura\Figure\image-20240615152401012.png)
 
+
+
+## Gamplay Effects
+
 创建widgetController负责widget和model之间的数据交互
+
+![image-20240616102312512](G:\ue5game\Aura\Figure\image-20240616102312512.png)
+
+3种改变属性的方式
+
+![image-20240616102624287](G:\ue5game\Aura\Figure\image-20240616102624287.png)
+
+![image-20240616154257484](G:\ue5game\Aura\Figure\image-20240616154257484.png)
+
+Instant&Periodic永久改变属性
+
+![image-20240616161138849](G:\ue5game\Aura\Figure\image-20240616161138849.png)
+
+Stacking -Aggregate by Source
+
+​		-Aggregate by Target
