@@ -61,3 +61,19 @@ Stacking -Aggregate by Source
 ​		-Aggregate by Target
 
 OverlayWidgetController 查找DT
+
+![image-20240621190814913](G:\ue5game\Aura\Figure\image-20240621190814913.png)
+
+多Modifier计算顺序
+
+![image-20240621191052179](G:\ue5game\Aura\Figure\image-20240621191052179.png)
+
+Modifier计算顺序
+
+![image-20240621192428962](G:\ue5game\Aura\Figure\image-20240621192428962.png)
+
+增加属性步骤
+
+![image-20240621192505720](G:\ue5game\Aura\Figure\image-20240621192505720.png)
+
+属性关系
