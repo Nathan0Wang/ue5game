@@ -77,3 +77,34 @@ Modifier计算顺序
 ![image-20240621192505720](G:\ue5game\Aura\Figure\image-20240621192505720.png)
 
 属性关系
+
+![image-20240622091042387](G:\ue5game\Aura\Figure\image-20240622091042387.png)
+
+**Draw As Border**
+
+![image-20240622104229418](G:\ue5game\Aura\Figure\image-20240622104229418.png)
+
+当属性菜单关闭时CallAttributeMenuClosed，Overlay就能知道属性菜单关闭恢复菜单按钮
+
+![image-20240622110036305](G:\ue5game\Aura\Figure\image-20240622110036305.png)
+
+属性菜单更新流程
+
+![image-20240622153855000](G:\ue5game\Aura\Figure\image-20240622153855000.png)
+
+```c++
+template<class T>
+using TStaticFuncPtr = typename TBaseStaticDelegateInstance<T, FDefaultDelegateUserPolicy>::FFuncPtr;
+```
+
+```c++
+TStaticFuncPtr<float(int32, float, int32)> RandomFuncPtr;
+// equal to
+static float RandomFunc(int32 x, float y, int32 z) {return y;}
+```
+
+可以存储函数，执行是这样的
+
+```c++
+float res = RandomFuncPtr(0, 0.f, 0);
+```
