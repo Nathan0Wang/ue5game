@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.3",
+	"EngineAssociation": "{A708114C-4B3A-EBFE-CA5C-4C9B8B1E31B7}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -12,7 +12,8 @@
 				"Engine",
 				"GameplayAbilities",
 				"UMG",
-				"CoreUObject"
+				"CoreUObject",
+				"EnhancedInput"
 			]
 		}
 	],
