@@ -8,10 +8,9 @@
 
 AAuraProjectile::AAuraProjectile()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+	PrimaryActorTick.bCanEverTick = false;
 	bReplicates = true;
-	
+
 	Sphere = CreateDefaultSubobject<USphereComponent>("Sphere");
 	SetRootComponent(Sphere);
 	Sphere->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
@@ -20,10 +19,10 @@ AAuraProjectile::AAuraProjectile()
 	Sphere->SetCollisionResponseToChannel(ECC_WorldStatic, ECR_Overlap);
 	Sphere->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
 
-	ProjectileMovementComponent = CreateDefaultSubobject<UProjectileMovementComponent>("ProjectileMovement");
-	ProjectileMovementComponent->InitialSpeed = 550.f;
-	ProjectileMovementComponent->MaxSpeed = 550.f;
-	ProjectileMovementComponent->ProjectileGravityScale = 0.f;
+	ProjectileMovement = CreateDefaultSubobject<UProjectileMovementComponent>("ProjectileMovement");
+	ProjectileMovement->InitialSpeed = 550.f;
+	ProjectileMovement->MaxSpeed = 550.f;
+	ProjectileMovement->ProjectileGravityScale = 0.f;
 }
 
 void AAuraProjectile::BeginPlay()

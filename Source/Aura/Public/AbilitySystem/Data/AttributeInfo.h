@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameplayTagContainer.h"
 #include "Engine/DataAsset.h"
+#include "GameplayTagContainer.h"
 #include "AttributeInfo.generated.h"
 
 USTRUCT(BlueprintType)
@@ -21,13 +21,9 @@ struct FAuraAttributeInfo
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	FText AttributeDescription = FText();
 
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	FText AttributeChinese = FText();
-
 	UPROPERTY(BlueprintReadOnly)
 	float AttributeValue = 0.f;
 };
-
 
 /**
  * 
@@ -41,6 +37,4 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TArray<FAuraAttributeInfo> AttributeInformation;
-
-	
 };

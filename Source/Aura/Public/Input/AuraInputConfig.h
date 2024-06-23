@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "GameplayTagContainer.h"
 #include "Engine/DataAsset.h"
+#include "GameplayTagContainer.h"
 #include "AuraInputConfig.generated.h"
 
 USTRUCT(BlueprintType)
@@ -29,7 +29,7 @@ class AURA_API UAuraInputConfig : public UDataAsset
 public:
 
 	const UInputAction* FindAbilityInputActionForTag(const FGameplayTag& InputTag, bool bLogNotFound = false) const;
-	
+
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TArray<FAuraInputAction> AbilityInputActions;
 };

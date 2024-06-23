@@ -3,8 +3,8 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "AuraInputConfig.h"
 #include "EnhancedInputComponent.h"
+#include "AuraInputConfig.h"
 #include "AuraInputComponent.generated.h"
 
 /**
@@ -20,8 +20,7 @@ public:
 };
 
 template <class UserClass, typename PressedFuncType, typename ReleasedFuncType, typename HeldFuncType>
-void UAuraInputComponent::BindAbilityActions(const UAuraInputConfig* InputConfig, UserClass* Object,
-	PressedFuncType PressedFunc, ReleasedFuncType ReleasedFunc, HeldFuncType HeldFunc)
+void UAuraInputComponent::BindAbilityActions(const UAuraInputConfig* InputConfig, UserClass* Object, PressedFuncType PressedFunc, ReleasedFuncType ReleasedFunc, HeldFuncType HeldFunc)
 {
 	check(InputConfig);
 
