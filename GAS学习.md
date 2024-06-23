@@ -108,24 +108,3 @@ static float RandomFunc(int32 x, float y, int32 z) {return y;}
 ```c++
 float res = RandomFuncPtr(0, 0.f, 0);
 ```
-
-![image-20240622220052117](G:\ue5game\Aura\Figure\image-20240622220052117.png)
-
-![image-20240622222815774](G:\ue5game\Aura\Figure\image-20240622222815774.png)
-
-![image-20240622223557357](G:\ue5game\Aura\Figure\image-20240622223557357.png)
-
-![image-20240622223857614](G:\ue5game\Aura\Figure\image-20240622223857614.png)
-
-![image-20240622224608528](G:\ue5game\Aura\Figure\image-20240622224608528.png)
-
-![image-20240623094446214](G:\ue5game\Aura\Figure\image-20240623094446214.png)
-
-```c++
-// start以后不触发
-ETriggerEvent::Started
-// 一直触发
-ETriggerEvent::Triggered
-// Stop以后触发
-ETriggerEvent::Completed
-```
